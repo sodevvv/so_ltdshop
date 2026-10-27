@@ -23,7 +23,7 @@ end
 RegisterNUICallback('buySold', function (data, cb)
     local items = data.sold
     local price = data.total
-    TriggerServerEvent("so_ltd:buySold", items, price)
+    TriggerServerEvent(GetCurrentResourceName() .. ":buySold", items, price)
     cb("kr")
     
 end)
