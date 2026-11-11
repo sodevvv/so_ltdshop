@@ -38,7 +38,7 @@ function shops:build(data)
         exports['so_interact']:CreateInteract(data.name, "fas fa-shopping-cart", "Ouvrir le magasin", "E", "#00A3FF", function()
              self:openShop(data.items)
         end)
-        exports["so_interact"]:ShowInteract(data.name   , data.coords, 3.4, 0.0, 0.13, 0.4)
+        exports["so_interact"]:ShowInteract(data.name, data.coords, 3.4, 0.0, 0.13, 0.4)
     else if Config.interact == "ox" then
             CreateThread(function()
                 while true do 
